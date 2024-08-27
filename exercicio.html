@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <button id="addTxt">Adicionar texto</button>
+    <div id="container"></div>
+    <script>
+        document.getElementById('addTxt').addEventListener('click', function(){
+            const container = document.getElementById('container');
+            const novoTxt = document.createElement('p');
+            novoTxt.textContent = 'Vai Curintiaaaa';
+
+            container.appendChild(novoTxt);
+        })
+    </script>
+</body>
+</html>
